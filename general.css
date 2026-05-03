@@ -1,0 +1,372 @@
+/*EVERYTHING WHITE WILL USE THE MASK FUNCTIONALITY WHEN IMPLEMENTED*/
+
+body {
+  background-color: #0a0017;
+}
+
+#wrappermain {
+  margin: 24px auto;
+  width: 1200px;
+  border: 5px solid white; /* PLACEHOLDER */
+  background-color: #0C001B;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height:775px;
+}
+
+#wrappertext {
+  margin: 24px auto;
+  width: 1200px;
+  border: 5px solid white; /* PLACEHOLDER */
+  background-color: #0C001B;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height:auto;
+}
+
+#wrapperprojects {
+  margin: 24px auto;
+  width: 1450px;
+  border: 5px solid white; /* PLACEHOLDER */
+  background-color: #0C001B;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height:auto;
+}
+
+
+h1, h1 a, h2, h3, h4, h4 a, p, #threecolumn h3 a {
+  background-image: linear-gradient(to bottom, #8E8BDD, #8BA7DD, #71C99A, #84C971, #AAC971, #C8C971, #C9A171);                       /* gradient */
+  color: transparent;           /* makes text transparent */
+  background-color: black;       /* fallback color if gradient breaks */
+  background-clip: text;        /* clips the background with the text */
+  background-attachment: fixed; /* locks the background gradient */ 
+}
+
+h1 a {
+  text-decoration:none;
+  transition:text-decoration 0.2s;
+}
+
+header {
+  text-transform:capitalize;
+  grid-column: span 12;
+  background-color:#15002E;
+  padding: 5px 32px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header img {
+  float: right;
+  /* home image */
+}
+
+nav, footer {
+  grid-column: span 12;
+  text-align:center;
+  background-color:#15002E;
+}
+
+/* nav {
+  height:52px;
+} */
+
+nav ul, footer ul, #threecolumn ul {
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+
+nav ul li, footer ul li {
+display:inline-block;
+}
+
+nav li a {
+  display:block;
+  font-family:'Times New Roman', Times, serif;
+  width:150px;
+  margin-right:14px;
+  margin-left:14px;
+  padding: 12px 25px;
+  text-decoration:none;
+  text-align:center;
+  font-weight:bold;
+  font-size:24px;
+  border-radius: 7px 7px 0px 0px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+footer li a {
+  display:block;
+  font-family:'Times New Roman', Times, serif;
+  width:150px;
+  margin-right:14px;
+  margin-left:14px;
+  padding: 12px 25px;
+  text-decoration:none;
+  text-align:center;
+  font-weight:bold;
+  font-size:24px;
+  border-radius: 0px 0px 7px 7px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#threecolumn {
+  margin-top:36px;
+  text-align:center;
+}
+
+#threecolumn li {
+  display:inline-block;
+  vertical-align: top;
+  width:375px;
+  height:550px;
+  margin-right:36px;
+  margin-left:36px;
+  margin-bottom:36px;
+  font-size:24px;
+  border-radius: 24px;
+  border: 5px solid white;
+  background-color:#15002E;
+}
+
+#threecolumn h3 a {
+  padding-top:0px;
+  font-weight:bold;
+  font-size:36px;
+  text-decoration:none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+footer {
+  padding-bottom:12px;
+}
+
+footer p {
+  color:white;
+  text-align:center;
+  letter-spacing:24px;
+  font-size:32px;
+}
+
+.option1 .dropdown{
+    background-color:#71C99A; /*main color*/
+    color:#062313;
+}
+
+.option1:hover .dropdown {
+    background-color:#417459; /*alt color*/
+    color:#ffffff; /*Does not use mask*/
+}
+
+.option1 .dropdown-links a {
+    background-color:#417459;  /*alt color*/
+    color:#ffffff;
+}
+
+.option1 .dropdown-links a:hover {
+    background-color:#71C99A; /*main color*/
+    color:#062313;
+}
+
+.option2 .dropdown{
+    background-color:#84C971;
+    color:#172B18;
+}
+
+.option2:hover .dropdown {
+    background-color:#507945;
+    color:#ffffff; /*Does not use mask*/
+}
+
+.option2 .dropdown-links a {
+    background-color:#507945;
+    color:#ffffff; /*Does not use mask*/
+}
+
+.option2 .dropdown-links a:hover {
+    background-color:#84C971;
+    color:#172B18;
+}
+
+.option3 .dropdown{
+    background-color:#AAC971;
+    color:#242B17;
+}
+
+.option3:hover .dropdown {
+    background-color:#647642;
+    color:#ffffff; /*Does not use mask*/
+}
+
+.option3 .dropdown-links a {
+    background-color:#647642;
+    color:#ffffff; /*Does not use mask*/
+}
+
+.option3 .dropdown-links a:hover {
+    background-color:#AAC971;
+    color:#242B17;
+}
+
+.option4 .dropdown{
+    background-color:#C8C971;
+    color:#282B17;
+}
+
+.option4:hover .dropdown {
+    background-color:#7b7c46;
+    color:#ffffff; /*Does not use mask*/
+}
+
+.option4 .dropdown-links a {
+    background-color:#7b7c46;
+    color:#ffffff; /*Does not use mask*/
+}
+
+.option4 .dropdown-links a:hover {
+    background-color:#C8C971;
+    color:#282B17;
+}
+
+.option5 {
+    background-color:#C9A171;
+    color:#2B2817;
+}
+
+.option5:hover {
+    background-color:#826849;
+    color:#ffffff; /*Does not use mask*/
+}
+
+.dropdown {
+  position:relative;
+  font-family:'Times New Roman', Times, serif;
+  width:150px;
+  margin-right:14px;
+  margin-left:14px;
+  padding: 12px 25px;
+  text-decoration:none;
+  text-align:center;
+  font-weight:bold;
+  font-size:24px;
+  border-radius: 7px 7px 0px 0px;
+  transition: background-color 0.2s, color 0.2s;
+  /* background-color:#71C99A;
+  color:#062313; */
+}
+
+.dropdown-links {
+  display:none;
+  position: absolute;
+  top:48px;
+  left:0px;
+  /* background-color:#71C99A;
+  color:#062313; */
+  border-radius: 0px 0px 7px 7px;
+}
+
+/* overriding the nav li a style */
+.dropdown-links a {
+   border-radius: 0;
+   margin: 0;
+}
+
+.dropdown:hover .dropdown-links {
+  display:block;
+}
+
+h2, h3, h4 {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight:normal;
+}
+
+main {
+  grid-column: span 8;
+  padding-left: 32px;
+  padding-right:16px;
+}
+
+.across {
+  grid-column:span 12;
+  padding-left: 32px;
+  padding-right:16px;
+}
+
+main h2 {
+  font-size:36px;
+  margin: 20px 0px;
+}
+
+p {
+  font-family:monospace;
+  font-size:18px;
+}
+
+aside {
+  grid-column:span 4;
+  padding-left:16px;
+  padding-right: 32px;
+  background-color:#3C3C67;
+  overflow-y:scroll;
+}
+
+aside h3 {
+  font-size:28px;
+  font-weight:bold;
+}
+
+aside h4 {
+  border-top: 3px solid #0C001B;
+  padding-top:8px;
+  font-weight:bold;
+}
+
+aside h4 a {
+text-decoration:underline;
+transition: color 0.2s, text-decoration 0.2s;
+}
+
+aside h4 a:hover {
+  color:white;
+  text-decoration: underline;
+}
+
+h1 a:hover, #threecolumn h3 a:hover{
+  color:white;
+  text-decoration:underline;
+}
+
+aside h3, aside h4 {
+text-align:center;
+/*Purposefully off-center to account for scroll bar on right. Might change if it's lame*/
+}
+
+aside p {
+  font-family:monospace;
+}
+
+.center {
+  text-align:center;
+}
+
+.emphasis {
+  font-weight:bold;
+  font-style:italic;
+}
+
+.indented {
+    text-indent:3em;
+}
+
+aside img {
+  float:right;
+  margin-left:12px;
+  margin-bottom:12px;
+}
+
+#myCarousel {
+  text-align:center;
+  --f-arrow-color:white;
+  --f-arrow-pos: 125px;
+}
